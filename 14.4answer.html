@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Use the map function to create a new array containing only names present in myObj.</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+var myObj =
+[{'name':'Saurabh', 'age': 30, 'occupation': "Team Leader"},
+{'name':'Anupriya', 'age': 32, 'occupation': "Team Leader"},
+{'name':'Kalyani', 'age': 25, 'occupation': "Programmer"},
+{'name':'Damodaran', 'age': 27, 'occupation': "Programmer"},
+{'name':'Krishnakath', 'age': 22, 'occupation': "Programmer"},
+ {'name':'Venketraman', 'age': 28, 'occupation': "Programmer"}];
+
+
+	var output=[];
+
+
+for (i in myObj)
+{
+	 output.push(myObj[i].name);
+	 
+
+}
+
+console.log(output);
+
+
+
+
+</script>
+</body>
+</html>

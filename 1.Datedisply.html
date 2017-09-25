@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Date </title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+var dat = new Date();
+var day = dat.getDate();
+var month = dat.getMonth()+1; 
+var year = dat.getFullYear();
+
+if(day<10) 
+{
+    day='0'+day;
+} 
+
+if(month<10) 
+{
+    month='0'+month;
+} 
+
+dat = month+'/'+day+'/'+year;
+alert("Today Date is:   "+ dat);
+	
+
+
+
+
+</script>
+
+</body>
+</html>

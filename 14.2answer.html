@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sort the object basis the age key in the descending order</title>
+</head>
+<body>
+
+
+<p id="demo"></p>
+<script type="text/javascript">
+
+	var myObj =
+[{'name':'Saurabh', 'age': 30, 'occupation': "Team Leader"},
+{'name':'Anupriya', 'age': 32, 'occupation': "Team Leader"},
+{'name':'Kalyani', 'age': 25, 'occupation': "Programmer"},
+{'name':'Damodaran', 'age': 27, 'occupation': "Programmer"},
+{'name':'Krishnakath', 'age': 22, 'occupation': "Programmer"},
+ {'name':'Venketraman', 'age': 28, 'occupation': "Programmer"}];
+
+var output=[];
+
+
+
+for(i in myObj)
+{
+ 
+ output.push((myObj[i].age));
+ 
+var a=output.sort();
+console.log(a.reverse());
+
+}
+
+
+
+ 
+</script>
+<button onclick="myFunction()">Try it</button>
+</body>
+</html>

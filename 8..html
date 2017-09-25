@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email address.</title>
+</head>
+<body>
+
+<script type="text/javascript">
+function emails()
+{
+
+var str = document.getElementById("email123").value;
+
+var mail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(mail.test(str))
+{  
+alert("Your Email is Correct..!");  
+}  
+else  
+{  
+alert("OOPs..! Entered wrong Email...!");  
+}
+}
+</script>
+
+
+
+
+<input  id="email123" type="text" name="email">
+<button type="submit" name="click" onclick="emails()">click</button>
+
+
+</body>
+</html>

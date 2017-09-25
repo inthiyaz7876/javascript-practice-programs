@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>average Program:</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+function avg(x){
+
+
+	var	a=Object.values(x);	
+	var b=Object.keys(x);
+
+	var count=[];
+
+	for(var j=0;j<=a.length; j++)
+	{
+		count +=a[i];
+		console.log(count);
+	}
+
+
+
+	for (var i=0; i<=a.length;i++)
+	{
+		 //var avgmks += a[i];
+		 //console.log(avgmks);
+		//var avg = (Avgmarks/students.length);
+
+		if(a[i]<60)
+		{
+			document.write("F<br />");
+		}
+		else if(a[i]<70)
+		{
+			document.write("D<br />");
+		}else if(a[i]<80)
+		{
+			document.write("C <br />");
+		}else if(a[i]<90)
+		{
+			document.write("B <br/>");
+		}
+		else if(a[i]<100)
+		{
+			document.write("A <br />")
+		}
+	}
+
+
+	console.log(b);
+	console.log(a);
+
+		}
+
+var Student=
+			{
+				David: 30,
+				Vinoth: 77,
+				Divya : 88,
+				Ishitha :95,
+				Thomas  : 68
+			};
+		avg(Student);
+
+
+
+</script>
+
+</body>
+</html>

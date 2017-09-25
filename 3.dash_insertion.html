@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insert dash values</title>
+</head>
+<body >
+
+<script type="text/javascript">
+
+
+
+
+function numb(num)
+{
+
+document.write("Entered number is :"+num+"<br>Result : <br>");
+
+var str = num.toString();
+
+  var result = [str[0]];
+for(var x=1; x<str.length; x++)
+  {
+    if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+     {
+      result.push('-', str[x]);
+     }
+    else
+     {
+      result.push(str[x]);
+     }
+  }
+  document.write(result.join(''));
+
+  }
+
+  numb(2214456);
+
+
+
+</script>
+</body>
+</html>
+
+   
